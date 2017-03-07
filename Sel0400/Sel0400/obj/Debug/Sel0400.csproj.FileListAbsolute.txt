@@ -8,15 +8,3 @@ C:\Users\m.vertebnyi\Documents\GitHub\Sel-4\Sel-4-00\Sel-4-00\Sel-4-00\bin\Debug
 C:\Users\m.vertebnyi\Documents\GitHub\Sel-4\Sel-4-00\Sel-4-00\Sel-4-00\obj\Debug\Sel0400.csprojResolveAssemblyReference.cache
 C:\Users\m.vertebnyi\Documents\GitHub\Sel-4\Sel-4-00\Sel-4-00\Sel-4-00\obj\Debug\Sel-4-00.exe
 C:\Users\m.vertebnyi\Documents\GitHub\Sel-4\Sel-4-00\Sel-4-00\Sel-4-00\obj\Debug\Sel-4-00.pdb
-C:\Users\m.vertebnyi\Documents\GitHub\Sel-4\Sel0400\Sel0400\bin\Debug\WebDriver.dll
-C:\Users\m.vertebnyi\Documents\GitHub\Sel-4\Sel0400\Sel0400\bin\Debug\WebDriver.Support.dll
-C:\Users\m.vertebnyi\Documents\GitHub\Sel-4\Sel0400\Sel0400\bin\Debug\WebDriver.xml
-C:\Users\m.vertebnyi\Documents\GitHub\Sel-4\Sel0400\Sel0400\bin\Debug\WebDriver.Support.xml
-C:\Users\m.vertebnyi\Documents\GitHub\Sel-4\Sel0400\Sel0400\obj\Debug\Sel0400.csprojResolveAssemblyReference.cache
-C:\Users\m.vertebnyi\Documents\GitHub\Sel-4\Sel0400\Sel0400\bin\Debug\Sel0400.exe.config
-C:\Users\m.vertebnyi\Documents\GitHub\Sel-4\Sel0400\Sel0400\bin\Debug\Sel0400.exe
-C:\Users\m.vertebnyi\Documents\GitHub\Sel-4\Sel0400\Sel0400\bin\Debug\Sel0400.pdb
-C:\Users\m.vertebnyi\Documents\GitHub\Sel-4\Sel0400\Sel0400\bin\Debug\nunit.framework.dll
-C:\Users\m.vertebnyi\Documents\GitHub\Sel-4\Sel0400\Sel0400\bin\Debug\nunit.framework.xml
-C:\Users\m.vertebnyi\Documents\GitHub\Sel-4\Sel0400\Sel0400\obj\Debug\Sel0400.exe
-C:\Users\m.vertebnyi\Documents\GitHub\Sel-4\Sel0400\Sel0400\obj\Debug\Sel0400.pdb

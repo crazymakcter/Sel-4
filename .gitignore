@@ -45,3 +45,11 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# VS folder
+bin/
+obj/
+packages/
+Sel400/Sel0400/bin/
+Sel400/Sel0400/obj/
+Sel400/Sel0400/packages/
