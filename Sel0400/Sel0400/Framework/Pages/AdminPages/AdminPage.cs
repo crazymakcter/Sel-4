@@ -1,4 +1,5 @@
 ﻿using OpenQA.Selenium;
+using Sel0400.Framework.Constants;
 using Sel0400.Framework.Pages.AdminPages.SignIn;
 
 namespace Sel0400.Framework.Pages.AdminPages
@@ -16,7 +17,7 @@ namespace Sel0400.Framework.Pages.AdminPages
 
     public void GoTo()
     {
-      _driver.Navigate().GoToUrl("http://localhost:8099/litecart/admin/");
+      _driver.Navigate().GoToUrl(Urls.Admin);
     }
   }
 }
