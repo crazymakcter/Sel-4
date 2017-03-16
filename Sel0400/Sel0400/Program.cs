@@ -5,6 +5,7 @@ using Sel0400.Autotests.Sel0407;
 using Sel0400.Autotests.Sel0408;
 using Sel0400.Autotests.Sel0409;
 using Sel0400.Autotests.Sel0410;
+using Sel0400.Autotests.Sel0411;
 
 namespace Sel0400
 {
@@ -17,7 +18,8 @@ namespace Sel0400
                         " 7 - [x] Задание 7. Сделайте сценарий, проходящий по всем разделам админки \n" +
                         " 8 - [x] Задание 8. Сделайте сценарий, проверяющий наличие стикеров у товаров \n" +
                         " 9 - [x] Задание 9. Проверить сортировку стран и геозон в админке \n" +
-                        "10 - [x] Задание 10. Проверить, что открывается правильная страница товара");
+                        "10 - [x] Задание 10. Проверить, что открывается правильная страница товара \n" +
+                        "11 - [x] Задание 11. Сделайте сценарий регистрации пользователя");
       string selectNimber = Console.ReadLine();
       switch (selectNimber)
       {
@@ -38,6 +40,9 @@ namespace Sel0400
           break;
         case "10":
           Sel0410.Test01_VerifyProductAfterAddToCart();
+          break;
+        case "11":
+          Sel0411.Test01_VerifiregistartionAndReloginNewUser();
           break;
         default:
           Console.WriteLine("Incorrect inputnumber");
