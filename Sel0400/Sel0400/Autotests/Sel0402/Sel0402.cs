@@ -2,6 +2,8 @@
 using System.Threading;
 using OpenQA.Selenium;
 using Sel0400.Framework;
+using Sel0400.Framework.Constants;
+
 namespace Sel0400.Autotests.Sel0402
 {
   class Sel0402
@@ -9,7 +11,7 @@ namespace Sel0400.Autotests.Sel0402
     public static void Test01_Admin_LoginAndVerify()
     {
       var driver = TestBase.Select_driver();
-      driver.Navigate().GoToUrl("http://localhost:8099/litecart/admin/");
+      driver.Navigate().GoToUrl(Urls.Admin);
       driver.FindElement(By.Name("username")).SendKeys("admin");
       driver.FindElement(By.Name("password")).SendKeys("admin");
       driver.FindElement(By.Name("login")).Click();

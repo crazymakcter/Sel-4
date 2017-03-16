@@ -54,6 +54,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Framework\Constants\Urls.cs" />
     <Compile Include="Framework\Pages\AdminPages\AdminPage.cs" />
     <Compile Include="Framework\Pages\AdminPages\SignIn\AdminLogin.cs" />
     <Compile Include="Framework\Controls\Button.cs" />
