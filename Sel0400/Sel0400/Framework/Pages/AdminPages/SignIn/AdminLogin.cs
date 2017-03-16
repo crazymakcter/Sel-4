@@ -10,7 +10,7 @@ namespace Sel0400.Framework.Pages.AdminPages.SignIn
     protected Button LoginButton;
     protected TextBox UsernameTextBox;
     protected TextBox PasswordTextBox;
-    protected TextLabel messageSuccessElement;
+    protected TextLabel MessageSuccessElement;
 
     public AdminLogin(IWebDriver driver)
     {
@@ -18,7 +18,7 @@ namespace Sel0400.Framework.Pages.AdminPages.SignIn
       LoginButton = new Button(_driver, By.Name("login"));
       UsernameTextBox = new TextBox(_driver, By.Name("username"));
       PasswordTextBox = new TextBox(_driver, By.Name("password"));
-      messageSuccessElement = new TextLabel(_driver, By.ClassName("success"));
+      MessageSuccessElement = new TextLabel(_driver, By.ClassName("success"));
     }
 
     public void SignIn(string username, string password)
@@ -27,7 +27,7 @@ namespace Sel0400.Framework.Pages.AdminPages.SignIn
       PasswordTextBox.SendKeys(password);
       LoginButton.Click();
       Thread.Sleep(2000);
-      if (!messageSuccessElement.ElementDisplayed())
+      if (!MessageSuccessElement.ElementDisplayed())
       {
         PasswordTextBox.SendKeys(Keys.Enter);
       }

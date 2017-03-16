@@ -61,9 +61,15 @@
     <Compile Include="Autotests\Sel0410\Sel0410.cs" />
     <Compile Include="Autotests\Sel0411\Sel0411.cs" />
     <Compile Include="Autotests\Sel0411\UserData.cs" />
+    <Compile Include="Autotests\Sel0412\Product.cs" />
+    <Compile Include="Autotests\Sel0412\Sel0412.cs" />
     <Compile Include="Framework\Constants\Urls.cs" />
+    <Compile Include="Framework\Controls\Link.cs" />
     <Compile Include="Framework\Controls\TextLabel.cs" />
+    <Compile Include="Framework\Data\Catalog\Product.cs" />
     <Compile Include="Framework\Pages\AdminPages\AdminPage.cs" />
+    <Compile Include="Framework\Pages\AdminPages\Catalog\Catalog.cs" />
+    <Compile Include="Framework\Pages\AdminPages\Catalog\ProductTab.cs" />
     <Compile Include="Framework\Pages\AdminPages\SignIn\AdminLogin.cs" />
     <Compile Include="Framework\Controls\Button.cs" />
     <Compile Include="Framework\Controls\TextBox.cs" />

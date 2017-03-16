@@ -19,4 +19,3 @@ C:\Users\m.vertebnyi\Documents\GitHub\Sel-4\Sel0400\Sel0400\bin\Debug\WebDriver.
 C:\Users\m.vertebnyi\Documents\GitHub\Sel-4\Sel0400\Sel0400\bin\Debug\WebDriver.Support.xml
 C:\Users\m.vertebnyi\Documents\GitHub\Sel-4\Sel0400\Sel0400\obj\Debug\Sel0400.exe
 C:\Users\m.vertebnyi\Documents\GitHub\Sel-4\Sel0400\Sel0400\obj\Debug\Sel0400.pdb
-C:\Users\m.vertebnyi\Documents\GitHub\Sel-4\Sel0400\Sel0400\obj\Debug\Sel0400.csprojResolveAssemblyReference.cache
