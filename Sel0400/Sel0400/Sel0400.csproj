@@ -57,6 +57,8 @@
     <Compile Include="Autotests\Sel0407\Sel0407.cs" />
     <Compile Include="Autotests\Sel0408\Sel0408.cs" />
     <Compile Include="Autotests\Sel0409\Sel0409.cs" />
+    <Compile Include="Autotests\Sel0410\Product.cs" />
+    <Compile Include="Autotests\Sel0410\Sel0410.cs" />
     <Compile Include="Framework\Constants\Urls.cs" />
     <Compile Include="Framework\Controls\TextLabel.cs" />
     <Compile Include="Framework\Pages\AdminPages\AdminPage.cs" />
