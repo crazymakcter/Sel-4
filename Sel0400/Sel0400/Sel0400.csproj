@@ -55,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Autotests\Sel0407\Sel0407.cs" />
+    <Compile Include="Autotests\Sel0408\Sel0408.cs" />
     <Compile Include="Framework\Constants\Urls.cs" />
     <Compile Include="Framework\Pages\AdminPages\AdminPage.cs" />
     <Compile Include="Framework\Pages\AdminPages\SignIn\AdminLogin.cs" />
