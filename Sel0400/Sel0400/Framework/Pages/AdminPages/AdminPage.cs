@@ -46,11 +46,13 @@ namespace Sel0400.Framework.Pages.AdminPages
 
     public IList<IWebElement> GetAllMenuElements()
     {
+      MenuElements.WaitForElement();
       return MenuElements.GetElements();
     }
 
     public IList<IWebElement> GetAllSubMenuElements()
     {
+      SubMenuElements.WaitForElement();
       return SubMenuElements.GetElements();
     }
 
