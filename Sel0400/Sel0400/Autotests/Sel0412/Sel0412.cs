@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using NUnit.Framework;
 using Sel0400.Framework;
 using Sel0400.Framework.Constants;
+using Sel0400.Framework.Data.Catalog;
 using Sel0400.Framework.Pages;
 
 namespace Sel0400.Autotests.Sel0412
@@ -15,29 +17,28 @@ namespace Sel0400.Autotests.Sel0412
     {
       ///var driver = TestBase.Select_driver();
       //driver.Navigate().GoToUrl(Urls.Admin);
-      
-      Product newProduct = new Product();
-      newProduct = Product.GenerateProduct();
+
+      Product newProduct = Product.GenerateProduct();
       Console.WriteLine(newProduct.Image);
       var nameProducCategory = "Catalog";
 
       Pages.Init(TestBase.Select_driver());
       Pages.AdminPages.GoTo();
       Pages.AdminPages.SignInForm.SignIn("admin", "admin");
+      Pages.AdminPages.GoToMenuCatalog();
+      Pages.AdminPages.GoToSubCatalog();
+      Pages.AdminPages.Catalog.ClickAddNewProductButton();
+      Pages.AdminPages.ProductTab.AddProduct(newProduct);
 
-      /*
-      MyWebDriver.Admin_OpenAndLogin(driver, "admin", "admin");
-      MyWebDriver.Admin_OpenCategory(driver, nameProducCategory);
-      MyWebDriver.AddNewProduct(driver, newProduct);
-      if (MyWebDriver.Admin_CheckProductInCatalog(driver, newProduct.Name))
-      {
-        Console.WriteLine("Product was added");
-      }
-      */
-
+      Console.WriteLine(
+        Pages.AdminPages.Catalog.ProductWithoutCategoryIsDisplayed(newProduct.Name)
+          ? "Product {0} was added"
+          : "Something went wrong, the Product {0} is not right!!!", newProduct.Name);
 
       Console.ReadKey();
       TestBase.CloseDriver();
     }
+    
+    
   }
 }

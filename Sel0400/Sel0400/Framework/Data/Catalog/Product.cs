@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace Sel0400.Framework.Data.Catalog
 {
-  class Product
+  public class Product
   {
     public string Name { get; set; }
     public string Code { get; set; }
@@ -30,7 +30,7 @@ namespace Sel0400.Framework.Data.Catalog
       NewProduct.Name = "BlackDuck" + GenerateText(5);
       NewProduct.Code = "bd0001" + GenerateNumber();
       NewProduct.Quantity = GenerateNumber();
-      NewProduct.Image = Path.GetDirectoryName(Path.GetDirectoryName(Directory.GetCurrentDirectory())) +
+      NewProduct.Image = Path.GetDirectoryName(Path.GetDirectoryName(Directory.GetCurrentDirectory())) + "\\" +
                          "black_duck.jpg";
       //NewProduct.ValidFrom = "2017-01-01";
       //NewProduct.ValidTo = "2017-03-03";
