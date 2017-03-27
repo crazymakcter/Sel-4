@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using NUnit.Framework;
 using Sel0400.Framework;
-using Sel0400.Framework.Constants;
 using Sel0400.Framework.Data.Catalog;
 using Sel0400.Framework.Pages;
 
@@ -15,12 +9,9 @@ namespace Sel0400.Autotests.Sel0412
   {
     public static void Test01_Admin_VerifyNewProduct()
     {
-      ///var driver = TestBase.Select_driver();
-      //driver.Navigate().GoToUrl(Urls.Admin);
 
-      Product newProduct = Product.GenerateProduct();
+      var newProduct = Product.GenerateProduct();
       Console.WriteLine(newProduct.Image);
-      var nameProducCategory = "Catalog";
 
       Pages.Init(TestBase.Select_driver());
       Pages.AdminPages.GoTo();
