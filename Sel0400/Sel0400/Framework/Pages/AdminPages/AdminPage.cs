@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
 using Sel0400.Framework.Constants;
 using Sel0400.Framework.Controls;
 using Sel0400.Framework.Pages.AdminPages.SignIn;
@@ -77,6 +78,8 @@ namespace Sel0400.Framework.Pages.AdminPages
     public void SwitchOnTab(int tabIndex)
     {
       _driver.SwitchTo().Window(_driver.WindowHandles[tabIndex]);
+      WebDriverWait wait = new WebDriverWait(_driver, TimeSpan.FromSeconds(10));
+      wait.Until(ExpectedConditions.ElementExists(By.CssSelector("title")));
     }
 
     public void SwitchOnTab(string windowsName)
