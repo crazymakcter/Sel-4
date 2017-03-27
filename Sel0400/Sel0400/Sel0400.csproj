@@ -76,6 +76,7 @@
     <Compile Include="Framework\Controls\TextBox.cs" />
     <Compile Include="Framework\Controls\WebControl.cs" />
     <Compile Include="Framework\Pages\MainPages\Checkout.cs" />
+    <Compile Include="Framework\Pages\MainPages\HeaderMenu.cs" />
     <Compile Include="Framework\Pages\MainPages\HomePage.cs" />
     <Compile Include="Framework\Pages\MainPages\Products.cs" />
     <Compile Include="Framework\Pages\MainPages\SignIn.cs" />
