@@ -1,7 +1,6 @@
 ﻿using System.Linq;
 using OpenQA.Selenium;
 using Sel0400.Framework.Controls;
-using Sel0400.Framework.Data.Catalog;
 
 namespace Sel0400.Framework.Pages.AdminPages.Catalog
 {

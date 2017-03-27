@@ -13,6 +13,7 @@ namespace Sel0400.Framework.Pages.AdminPages
     private readonly IWebDriver _driver;
     public AdminLogin SignInForm;
     public Catalog.Catalog Catalog;
+    public Countries.Countries Countries;
     public ProductTab ProductTab;
 
     private readonly WebControl MenuElements;
@@ -23,6 +24,7 @@ namespace Sel0400.Framework.Pages.AdminPages
       _driver = driver;
       SignInForm = new AdminLogin(_driver);
       Catalog = new Catalog.Catalog(_driver);
+      Countries = new Countries.Countries(_driver);
       ProductTab = new ProductTab(_driver);
       MenuElements = new WebControl(_driver, By.XPath(".//*[@id='app-']/a/span[2]"));
       SubMenuElements = new WebControl(_driver, By.XPath(".//*[@id='app-']/ul/li"));
@@ -37,6 +39,11 @@ namespace Sel0400.Framework.Pages.AdminPages
     public void GoToMenuCatalog()
     {
       GetMenuItem(GetAllMenuElements(), MenuAndSubMenu.MenuCatalog).Click();
+    }
+
+    public void GoToMenuCountries()
+    {
+      GetMenuItem(GetAllMenuElements(), MenuAndSubMenu.MenuCountries).Click();
     }
 
     public void GoToSubCatalog()
@@ -59,6 +66,31 @@ namespace Sel0400.Framework.Pages.AdminPages
     public IWebElement GetMenuItem(IList<IWebElement> listMenuItemElemets, string nameMenuItem)
     {
       return listMenuItemElemets.FirstOrDefault(t => t.Text == nameMenuItem);
+    }
+
+    public int GetCountOpenTabsInBrowser()
+    {
+      return _driver.WindowHandles.Count;
+    }
+
+    public void SwitchOnTab(int tabIndex)
+    {
+      _driver.SwitchTo().Window(_driver.WindowHandles[tabIndex]);
+    }
+
+    public void SwitchOnTab(string windowsName)
+    {
+      _driver.SwitchTo().Window(windowsName);
+    }
+
+    public string GetCurrentUrl()
+    {
+      return _driver.Url;
+    }
+
+    public void Closetab()
+    {
+      _driver.Close();
     }
   }
 }

@@ -1,5 +1,6 @@
-﻿using System.Threading;
+﻿using System;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
 using Sel0400.Framework.Controls;
 
 namespace Sel0400.Framework.Pages.AdminPages.SignIn
@@ -26,12 +27,13 @@ namespace Sel0400.Framework.Pages.AdminPages.SignIn
       UsernameTextBox.SendKeys(username);
       PasswordTextBox.SendKeys(password);
       LoginButton.Click();
-      Thread.Sleep(2000);
+      var wait = new WebDriverWait(_driver, new TimeSpan(0, 0, 5));
+      wait.Until(ExpectedConditions.ElementIsVisible(By.ClassName("success")));
       if (!MessageSuccessElement.ElementDisplayed())
       {
         PasswordTextBox.SendKeys(Keys.Enter);
       }
-      Thread.Sleep(2000);
+      wait.Until(ExpectedConditions.ElementIsVisible(By.ClassName("success")));
     }
 
   }

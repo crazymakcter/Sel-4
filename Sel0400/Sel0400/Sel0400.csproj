@@ -63,6 +63,7 @@
     <Compile Include="Autotests\Sel0411\UserData.cs" />
     <Compile Include="Autotests\Sel0412\Sel0412.cs" />
     <Compile Include="Autotests\Sel0413\Sel0413.cs" />
+    <Compile Include="Autotests\Sel0414\Sel0414.cs" />
     <Compile Include="Framework\Constants\MenuAndSubMenu.cs" />
     <Compile Include="Framework\Constants\Urls.cs" />
     <Compile Include="Framework\Controls\Link.cs" />
@@ -71,6 +72,7 @@
     <Compile Include="Framework\Pages\AdminPages\AdminPage.cs" />
     <Compile Include="Framework\Pages\AdminPages\Catalog\Catalog.cs" />
     <Compile Include="Framework\Pages\AdminPages\Catalog\ProductTab.cs" />
+    <Compile Include="Framework\Pages\AdminPages\Countries\Countries.cs" />
     <Compile Include="Framework\Pages\AdminPages\SignIn\AdminLogin.cs" />
     <Compile Include="Framework\Controls\Button.cs" />
     <Compile Include="Framework\Controls\TextBox.cs" />
