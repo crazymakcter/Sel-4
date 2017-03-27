@@ -31,4 +31,3 @@ C:\Users\Maksym\Documents\GitHub\Sel-4\Sel0400\Sel0400\bin\Debug\WebDriver.Suppo
 C:\Users\Maksym\Documents\GitHub\Sel-4\Sel0400\Sel0400\obj\Debug\Sel0400.exe
 C:\Users\Maksym\Documents\GitHub\Sel-4\Sel0400\Sel0400\obj\Debug\Sel0400.pdb
 C:\Users\Maksym\Documents\GitHub\Sel-4\Sel0400\Sel0400\obj\Debug\Sel0400.csprojResolveAssemblyReference.cache
-C:\Users\m.vertebnyi\Documents\GitHub\Sel-4\Sel0400\Sel0400\obj\Debug\Sel0400.csprojResolveAssemblyReference.cache

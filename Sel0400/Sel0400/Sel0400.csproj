@@ -64,6 +64,7 @@
     <Compile Include="Autotests\Sel0412\Sel0412.cs" />
     <Compile Include="Autotests\Sel0413\Sel0413.cs" />
     <Compile Include="Autotests\Sel0414\Sel0414.cs" />
+    <Compile Include="Autotests\Sel0417\Sel0417.cs" />
     <Compile Include="Framework\Constants\MenuAndSubMenu.cs" />
     <Compile Include="Framework\Constants\Urls.cs" />
     <Compile Include="Framework\Controls\Link.cs" />

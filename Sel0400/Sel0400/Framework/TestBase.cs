@@ -47,7 +47,9 @@ namespace Sel0400.Framework
 
     private static ChromeDriver DriverChrome()
     {
-      return new ChromeDriver(@"C:\web_config");
+      ChromeOptions options = new ChromeOptions();
+      options.SetLoggingPreference(LogType.Browser, LogLevel.All);
+      return new ChromeDriver(@"C:\web_config", options);
     }
 
     private static InternetExplorerDriver DriverIe()

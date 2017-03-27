@@ -9,6 +9,7 @@ using Sel0400.Autotests.Sel0411;
 using Sel0400.Autotests.Sel0412;
 using Sel0400.Autotests.Sel0413;
 using Sel0400.Autotests.Sel0414;
+using Sel0400.Autotests.Sel0417;
 
 namespace Sel0400
 {
@@ -25,7 +26,8 @@ namespace Sel0400
                         "11 - [x] Задание 11. Сделайте сценарий регистрации пользователя \n" +
                         "12 - [x] Задание 12. Сделайте сценарий добавления товара \n" +
                         "13 - [x] Задание 13. Сделайте сценарий работы с корзиной \n" +
-                        "14 - [x] Задание 14. Проверьте, что ссылки открываются в новом окне");
+                        "14 - [x] Задание 14. Проверьте, что ссылки открываются в новом окне \n" +
+                        "17 - [x] Задание 17. Проверьте отсутствие сообщений в логе браузера");
       string selectNimber = Console.ReadLine();
       switch (selectNimber)
       {
@@ -58,6 +60,9 @@ namespace Sel0400
           break;
         case "14":
           Sel0414.Test01_VerifyOpenLinkInNewtab();
+          break;
+        case "17":
+          Sel0417.Test01_VerifyOpenLinkInNewtab();
           break;
         default:
           Console.WriteLine("Incorrect inputnumber");

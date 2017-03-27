@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using OpenQA.Selenium;
 using Sel0400.Framework.Constants;
@@ -92,5 +93,22 @@ namespace Sel0400.Framework.Pages.AdminPages
     {
       _driver.Close();
     }
+
+    public void ManageBack()
+    {
+      _driver.Navigate().Back();
+    }
+
+    public void PrintLog()
+    {
+      var entries = _driver.Manage().Logs.GetLog(LogType.Browser);
+      if (entries.Count > 0)
+      {
+        foreach (var entry in entries)
+        {
+          Console.WriteLine("\t{0}", entry);
+        }
+      }
+    }
   }
-}
+  }
